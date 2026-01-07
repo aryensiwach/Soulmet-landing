@@ -815,10 +815,10 @@ h1 {
   }
   .feature-block {
     flex-direction: column;
-    gap: 40px;
-    margin-bottom: 80px;
+    gap: 0px;
+    margin-bottom: 120px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-size: cover;
   }
   .reverse-layout {
