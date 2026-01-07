@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
+    />
+    <title>Soulmet | Vedic AI</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="scribble scr-top-left"></div>
+    <div class="scribble scr-top-right"></div>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="icon-box"><i class="ph-fill ph-planet"></i></span>Soulmet
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="ph-bold ph-list"></i>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#showcase" onclick="toggleMenu()">Features</a
+        ><a href="#footer" onclick="toggleMenu()">Contact</a
+        ><a href="#hero" class="cta-small" onclick="toggleMenu()"
+          >Join Waitlist</a
+        >
+      </div>
+    </nav>
+    <header class="hero-container" id="hero">
+      <div class="hero-text animate-entry">
+        <div class="tag-pill glow-pill">
+          <i class="ph-fill ph-sparkle"></i> Launching Soon: Summer 2026
+        </div>
+        <h1 class="glow-text" style="font-size: 2.5rem">
+          Dating is Broken.<br />We Fixed it with
+          <span class="highlight">Astro Networking.</span>
+        </h1>
+        <p class="sub-text">
+          The first app that uses deep Vedic science and Networking to find your
+          <strong>most rare karmic connections</strong>. Stop swiping on faces,
+          start matching souls.
+        </p>
+        <div class="waitlist-form-container">
+          <div class="scribble scr-form"></div>
+          <p class="form-label">Be the first to get bonus and access:</p>
+          <form
+            class="email-signup"
+            onsubmit="event.preventDefault();alert('Added to waitlist! 🚀')"
+          >
+            <input
+              type="name"
+              placeholder="Enter your name..."
+              required
+            /><input
+              type="email"
+              placeholder="Enter your email address..."
+              required
+            /><button
+              style="
+                border-radius: 20px;
+                background-color: rgb(255, 208, 0);
+                color: rgb(255, 255, 255);
+              "
+              type="submit"
+            >
+              Join Now <i class="ph-bold ph-bell"></i>
+            </button>
+          </form>
+          <div class="waiting-count">
+            <div class="avatars">
+              <img src="https://i.pravatar.cc/100?img=1" /><img
+                src="https://i.pravatar.cc/100?img=2"
+              /><img src="https://i.pravatar.cc/100?img=3" />
+            </div>
+            <span>Join <strong>2,450+</strong> others waiting.</span>
+          </div>
+        </div>
+      </div>
+      <div class="phone-wrapper">
+        <div class="phone-frame">
+          <div class="notch"></div>
+          <div class="screen">
+            <div class="app-header-overlay"><span>Soulmet</span></div>
+            <div class="video-container">
+              <video
+                class="app-video"
+                autoplay
+                loop
+                muted
+                playsinline
+                poster="https://via.placeholder.com/300x600/8b5cf6/ffffff?text=App+Demo"
+                style="border-radius: 40px"
+              >
+                <source src="4678261-hd_1080_1920_25fps.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="match-card card-1">
+              <img src="https://i.pravatar.cc/150?img=9" />
+              <div class="m-info">
+                <span>Riya</span><small>Twin Flame Found</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-shadow"></div>
+      </div>
+    </header>
+    <section class="feature-showcase-section" id="showcase">
+      <div class="section-header">
+        <h2>Sneak Peek Inside</h2>
+        <p>See how Soulmet changes the game.</p>
+        <div class="scribble scr-header"></div>
+      </div>
+      <div class="feature-block">
+        <div class="feature-image-container">
+          <div class="slider-wrapper" id="s1">
+            <div class="slide">
+              <img
+                src="https://img.freepik.com/free-photo/front-view-cute-shiba-inu-dog_23-2149457808.jpg?semt=ais_hybrid&w=740&q=80"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.freepik.com/free-photo/pug-dog-isolated-white-background_2829-11416.jpg?semt=ais_hybrid&w=740&q=80"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.freepik.com/free-vector/happy-cartoon-puppy-illustration_1308-166286.jpg?semt=ais_hybrid&w=740&q=80"
+              />
+            </div>
+          </div>
+          <div class="dots-container" data-target="s1"></div>
+          <div class="scribble scr-img-1"></div>
+        </div>
+        <div class="feature-text">
+          <div class="f-icon"></div>
+          <h3>Self Discovery</h3>
+          <p>
+            Understand yourself before you understand others. Our AI scans your
+            D9 & D60 charts perfectly to reveal your true personality.
+          </p>
+          <ul class="f-list">
+            <li><i class="ph-bold ph-check"></i> Self Kundli roast</li>
+            <li><i class="ph-bold ph-check"></i> Add your friends</li>
+            <li><i class="ph-bold ph-check"></i> Know your past life</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feature-block reverse-layout">
+        <div class="feature-image-container">
+          <div class="slider-wrapper" id="s2">
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/600x700/fbbf24/78350f?text=Compatibility+Check"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/600x700/f59e0b/78350f?text=Red+Flags+Alert"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/600x700/d97706/ffffff?text=36+Gun+Milan"
+              />
+            </div>
+          </div>
+          <div class="dots-container" data-target="s2"></div>
+          <div class="scribble scr-img-2"></div>
+        </div>
+        <div class="feature-text">
+          <div class="f-icon yellow"></div>
+          <h3>Decode Their Flags</h3>
+          <p>
+            Don't waste time. View any profile and instantly get a summary of
+            them and your compatibility.
+          </p>
+          <ul class="f-list">
+            <li><i class="ph-bold ph-check"></i> Know Their red flags</li>
+            <li><i class="ph-bold ph-check"></i> Are they true friends</li>
+            <li><i class="ph-bold ph-check"></i> Past life connection check</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feature-block">
+        <div class="feature-image-container">
+          <div class="slider-wrapper" id="s3">
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/600x700/1e293b/ffffff?text=Intuition+Game"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/600x700/334155/ffffff?text=Vibe+Check"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/600x700/475569/ffffff?text=Topic+Chat"
+              />
+            </div>
+          </div>
+          <div class="dots-container" data-target="s3"></div>
+          <div class="scribble scr-img-1"></div>
+        </div>
+        <div class="feature-text">
+          <div class="f-icon dark"></div>
+          <h3>Cosmic Games</h3>
+          <p>
+            Play games like Intuition test and more with people/friends to match
+            energy.
+          </p>
+          <ul class="f-list">
+            <li><i class="ph-bold ph-check"></i> Intuition test</li>
+            <li><i class="ph-bold ph-check"></i> Guess photo by vibe</li>
+            <li><i class="ph-bold ph-check"></i> Group chat topics</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feature-block reverse-layout">
+        <div class="feature-image-container">
+          <div class="slider-wrapper" id="s4">
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/600x700/ff7e5f/ffffff?text=Cosmic+Pool+Feed"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/600x700/feb47b/ffffff?text=Filter+By+Vibe"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/600x700/86a8e7/ffffff?text=Search+Friends"
+              />
+            </div>
+          </div>
+          <div class="dots-container" data-target="s4"></div>
+          <div class="scribble scr-img-2"></div>
+        </div>
+        <div class="feature-text">
+          <div class="f-icon dark"></div>
+          <h3>Explore the Cosmic Pool</h3>
+          <p>
+            Scroll through a feed of people who are astrologically aligned with
+            you.
+          </p>
+          <ul class="f-list">
+            <li><i class="ph-bold ph-check"></i> Rare 1-in-a-Crore Matches</li>
+            <li><i class="ph-bold ph-check"></i> Filter by Vibe, not Looks</li>
+            <li><i class="ph-bold ph-check"></i> Explore & requests</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feature-block">
+        <div class="feature-image-container">
+          <div class="slider-wrapper" id="s5">
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/600x700/ec4899/ffffff?text=Chat+Analysis"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://via.placeholder.com/600x700/db2777/ffffff?text=Relationship+Report"
+              />
+            </div>
+          </div>
+          <div class="dots-container" data-target="s5"></div>
+          <div class="scribble scr-img-1"></div>
+        </div>
+        <div class="feature-text">
+          <div class="f-icon dark"></div>
+          <h3>Chat & Analysis</h3>
+          <p>
+            Know your partners secret, loyalty, compatibility directly in chat.
+          </p>
+          <ul class="f-list">
+            <li><i class="ph-bold ph-check"></i> Toxic Meter</li>
+            <li><i class="ph-bold ph-check"></i> Check loyalty</li>
+            <li><i class="ph-bold ph-check"></i> Combined kundli analysis</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="final-cta">
+      <div class="scribble scr-cta"></div>
+      <h2>Ready to find your Soulmet?</h2>
+      <p>Join the waitlist and secure your unique Soul ID before launch.</p>
+      <button
+        style="border-radius: 40px"
+        onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'});"
+      >
+        Join Beta List Now
+      </button>
+    </section>
+    <footer class="detailed-footer" id="footer">
+      <div class="scribble scr-footer"></div>
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <div class="logo">
+            <span class="icon-box"><i class="ph-fill ph-planet"></i></span
+            >Soulmet.
+          </div>
+          <p>Decoding the matrix of human connections, one star at a time.</p>
+          <div class="social-links">
+            <a href="#"><i class="ph-fill ph-instagram-logo"></i></a
+            ><a href="#"><i class="ph-fill ph-twitter-logo"></i></a
+            ><a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#showcase">Features</a><a href="#">How it Works</a
+          ><a href="#">Pricing (Soon)</a><a href="#">Manifesto</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a><a href="#">Careers</a><a href="#">Contact</a
+          ><a href="#">Privacy Policy</a>
+        </div>
+        <div class="footer-col newsletter-col">
+          <h4>Stay Updated</h4>
+          <p>Get astrological insights.</p>
+          <div class="mini-form">
+            <input type="text" placeholder="Email..." /><button>
+              <i class="ph-bold ph-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Soulmet Technologies Pvt Ltd.</p>
+        <p>Made with and in Meerut, India.</p>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
