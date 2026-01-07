@@ -51,24 +51,37 @@
         <div class="waitlist-form-container">
           <div class="scribble scr-form"></div>
           <p class="form-label">Be the first to get bonus and access:</p>
+
           <form
             class="email-signup"
-            onsubmit="event.preventDefault();alert('Added to waitlist! 🚀')"
+            action="https://api.web3forms.com/submit"
+            method="POST"
           >
             <input
-              type="name"
+              type="hidden"
+              name="access_key"
+              value="f6118bcd-8170-45b6-be5e-85367291a070"
+            />
+
+            <input
+              type="text"
+              name="name"
               placeholder="Enter your name..."
               required
-            /><input
+            />
+            <input
               type="email"
+              name="email"
               placeholder="Enter your email address..."
               required
-            /><button
+            />
+            <button
               style="
                 border-radius: 20px;
                 background-color: rgb(255, 208, 0);
                 color: rgb(255, 255, 255);
                 border: 1px solid rgba(0, 0, 0, 0.445);
+                cursor: pointer;
               "
               type="submit"
             >
@@ -77,9 +90,9 @@
           </form>
           <div class="waiting-count">
             <div class="avatars">
-              <img src="https://i.pravatar.cc/100?img=1" /><img
-                src="https://i.pravatar.cc/100?img=2"
-              /><img src="https://i.pravatar.cc/100?img=3" />
+              <img src="https://i.pravatar.cc/100?img=1" />
+              <img src="https://i.pravatar.cc/100?img=2" />
+              <img src="https://i.pravatar.cc/100?img=3" />
             </div>
             <span>Join <strong>2,450+</strong> others waiting.</span>
           </div>
