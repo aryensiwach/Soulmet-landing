@@ -61,13 +61,40 @@ body {
   position: relative;
   z-index: 100;
 }
+/* Logo Container ko align karne ke liye */
 .logo {
-  font-weight: 800;
-  font-size: 26px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: var(--primary-dark);
+  gap: 12px; /* Image aur Text ke beech ka gap */
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color); /* Ya white color agar theme dark hai */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Image ki size control karne ke liye */
+.logo-img {
+  height: 40px; /* Navbar ke hisab se height set kar */
+  width: auto; /* Width apne aap adjust hogi */
+  object-fit: contain;
+  border-radius: 5px; /* Agar thoda round karna ho to */
+}
+
+/* Agar text ka style alag chahiye */
+.logo-text {
+  font-family: "Outfit", sans-serif;
+  /* Agar image ke sath text nahi chahiye to 'display: none;' kar de */
+}
+
+/* Mobile ke liye thoda chhota size */
+@media (max-width: 768px) {
+  .logo-img {
+    height: 32px;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
 }
 .icon-box {
   background: var(--accent);

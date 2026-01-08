@@ -55,7 +55,9 @@
     <div class="scribble scr-top-right"></div>
     <nav class="navbar">
       <div class="logo">
-        <span class="icon-box"><i class="ph-fill ph-planet"></i></span>Soulmet
+        <img src="logo copy.png" alt="Soulmet Logo" class="logo-img" />
+
+        <span class="logo-text">Soulmet</span>
       </div>
       <div class="hamburger" onclick="toggleMenu()">
         <i class="ph-bold ph-list"></i>
@@ -130,8 +132,9 @@
 
           <script>
             // Tera generated URL yaha laga diya hai
+            // 👇 Main Form ke liye Naya URL 👇
             const scriptURL =
-              "https://script.google.com/macros/s/AKfycbzUo-G3wib2uTOeU0A5FgB9211Rg2_-TUj7pUq-zvgxnia530P54P2uZioi4PLo266m/exec";
+              "https://script.google.com/macros/s/AKfycbxoQZp-uDQYpIvyWSMni8_Q-MfMoLX4ZiUKFwOCoBzaMIzlaIG3nN47pCgnnegcgNkGLg/exec";
             const form = document.forms["submit-to-google-sheet"];
             const msg = document.getElementById("msg");
 
@@ -142,7 +145,7 @@
 
               fetch(scriptURL, { method: "POST", body: new FormData(form) })
                 .then((response) => {
-                  msg.innerHTML = "Success! Data Saved to Sheet.";
+                  msg.innerHTML = "Congratulations! Check your email.";
                   msg.style.color = "green"; // Success color
                   form.reset();
                   setTimeout(function () {
@@ -162,7 +165,7 @@
               <img src="https://i.pravatar.cc/100?img=2" />
               <img src="https://i.pravatar.cc/100?img=3" />
             </div>
-            <span>Join <strong>2,450+</strong> others waiting.</span>
+            <span>Join <strong>2,150+</strong> others waiting.</span>
           </div>
         </div>
       </div>
@@ -411,8 +414,9 @@
 
           <script>
             // URL wahi same rahega jo pehle tha
+            // 👇 Footer Form ke liye bhi Same URL 👇
             const footerURL =
-              "https://script.google.com/macros/s/AKfycbzUo-G3wib2uTOeU0A5FgB9211Rg2_-TUj7pUq-zvgxnia530P54P2uZioi4PLo266m/exec";
+              "https://script.google.com/macros/s/AKfycbxoQZp-uDQYpIvyWSMni8_Q-MfMoLX4ZiUKFwOCoBzaMIzlaIG3nN47pCgnnegcgNkGLg/exec";
 
             const footerForm = document.forms["footer-signup-form"];
             const footerMsg = document.getElementById("footer-msg");
@@ -426,7 +430,7 @@
                 body: new FormData(footerForm),
               })
                 .then((response) => {
-                  footerMsg.innerHTML = "Subscribed!";
+                  footerMsg.innerHTML = "Subscribed! Check your email.";
                   footerMsg.style.color = "lightgreen";
                   footerForm.reset();
                   setTimeout(function () {
