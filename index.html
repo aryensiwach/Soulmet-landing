@@ -7,6 +7,40 @@
       content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
     />
     <title>Soulmet | Vedic AI</title>
+
+    <meta
+      name="title"
+      content="Soulmet | Vedic AI - Dating Fixed with Astro Networking"
+    />
+    <meta
+      name="description"
+      content="The first app that uses deep Astro science to find your most rare karmic connections. Stop swiping on faces, start matching souls."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://soulmet.com/" />
+    <meta property="og:title" content="Soulmet | Find Your Astro Match" />
+    <meta
+      property="og:description"
+      content="Join the revolution of Astro Networking. Find your soulmate based on D9 & D60 charts."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn-icons-png.flaticon.com/512/3212/3212567.png"
+    />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://soulmet.com/" />
+    <meta property="twitter:title" content="Soulmet | Vedic AI" />
+    <meta
+      property="twitter:description"
+      content="Dating is Broken. We Fixed it with Astro Networking."
+    />
+    <meta
+      property="twitter:image"
+      content="https://cdn-icons-png.flaticon.com/512/3212/3212567.png"
+    />
+    <title>Soulmet | Vedic AI</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap"
       rel="stylesheet"
@@ -44,7 +78,7 @@
           <span class="highlight">Astro Networking.</span>
         </h1>
         <p class="sub-text">
-          The first app that uses deep Vedic science and Networking to find your
+          The first app that uses deep Astro science and Networking to find your
           <strong>most rare karmic connections</strong>. Stop swiping on faces,
           start matching souls.
         </p>
@@ -52,42 +86,76 @@
           <div class="scribble scr-form"></div>
           <p class="form-label">Be the first to get bonus and access:</p>
 
-          <form
-            class="email-signup"
-            action="https://api.web3forms.com/submit"
-            method="POST"
-          >
-            <input
-              type="hidden"
-              name="access_key"
-              value="f6118bcd-8170-45b6-be5e-85367291a070"
-            />
-
+          <form name="submit-to-google-sheet" class="email-signup">
             <input
               type="text"
               name="name"
               placeholder="Enter your name..."
               required
+              style="padding: 10px; margin: 5px"
             />
+
             <input
               type="email"
               name="email"
               placeholder="Enter your email address..."
               required
+              style="padding: 10px; margin: 5px"
             />
+
             <button
+              type="submit"
               style="
                 border-radius: 20px;
                 background-color: rgb(255, 208, 0);
                 color: rgb(255, 255, 255);
                 border: 1px solid rgba(0, 0, 0, 0.445);
                 cursor: pointer;
+                padding: 10px 20px;
               "
-              type="submit"
             >
               Join Now <i class="ph-bold ph-bell"></i>
             </button>
+
+            <span
+              id="msg"
+              style="
+                color: green;
+                margin-top: 10px;
+                display: block;
+                font-weight: bold;
+              "
+            ></span>
           </form>
+
+          <script>
+            // Tera generated URL yaha laga diya hai
+            const scriptURL =
+              "https://script.google.com/macros/s/AKfycbzUo-G3wib2uTOeU0A5FgB9211Rg2_-TUj7pUq-zvgxnia530P54P2uZioi4PLo266m/exec";
+            const form = document.forms["submit-to-google-sheet"];
+            const msg = document.getElementById("msg");
+
+            form.addEventListener("submit", (e) => {
+              e.preventDefault();
+              msg.innerHTML = "Submitting..."; // Loading text
+              msg.style.color = "#FFD700"; // Loading color (Yellow/Gold)
+
+              fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                .then((response) => {
+                  msg.innerHTML = "Success! Data Saved to Sheet.";
+                  msg.style.color = "green"; // Success color
+                  form.reset();
+                  setTimeout(function () {
+                    msg.innerHTML = "";
+                  }, 5000);
+                })
+                .catch((error) => {
+                  msg.innerHTML = "Error! Please try again.";
+                  msg.style.color = "red"; // Error color
+                  console.error("Error!", error.message);
+                });
+            });
+          </script>
           <div class="waiting-count">
             <div class="avatars">
               <img src="https://i.pravatar.cc/100?img=1" />
@@ -113,7 +181,10 @@
                 poster="https://via.placeholder.com/300x600/8b5cf6/ffffff?text=App+Demo"
                 style="border-radius: 40px"
               >
-                <source src="4678261-hd_1080_1920_25fps.mp4" type="video/mp4" />
+                <source
+                  src="Dating_App_Commercial_Generation.mp4"
+                  type="video/mp4"
+                />
               </video>
             </div>
             <div class="match-card card-1">
@@ -137,10 +208,10 @@
         <div class="feature-image-container">
           <div class="slider-wrapper" id="s1">
             <div class="slide">
-              <img src="Gemini_Generated_Image_becba4becba4becb.png" />
+              <img src="Gemini_Generated_Image_9e30049e30049e30.png" />
             </div>
             <div class="slide">
-              <img src="Gemini_Generated_Image_aezqdxaezqdxaezq.png" />
+              <img src="Gemini_Generated_Image_p71xlhp71xlhp71x.png" />
             </div>
           </div>
           <div class="dots-container" data-target="s1"></div>
@@ -148,7 +219,7 @@
         </div>
         <div class="feature-text">
           <div class="f-icon"></div>
-          <h3>Self Discovery</h3>
+          <h3>Self Profile</h3>
           <p>
             Understand yourself before you understand others. Our AI scans your
             D9 & D60 charts perfectly to reveal your true personality.
@@ -156,7 +227,9 @@
           <ul class="f-list">
             <li><i class="ph-bold ph-check"></i> Self Kundli roast</li>
             <li><i class="ph-bold ph-check"></i> Add your friends</li>
+            <li><i class="ph-bold ph-check"></i> Upload photos</li>
             <li><i class="ph-bold ph-check"></i> Know your past life</li>
+            <li><i class="ph-bold ph-check"></i> Deep Analyse with AI</li>
           </ul>
         </div>
       </div>
@@ -164,10 +237,10 @@
         <div class="feature-image-container">
           <div class="slider-wrapper" id="s2">
             <div class="slide">
-              <img src="Gemini_Generated_Image_4slz4g4slz4g4slz.png" />
+              <img src="Gemini_Generated_Image_9gwo6m9gwo6m9gwo.png" />
             </div>
             <div class="slide">
-              <img src="Gemini_Generated_Image_tqfnzdtqfnzdtqfn.png" />
+              <img src="profile next.png" />
             </div>
           </div>
           <div class="dots-container" data-target="s2"></div>
@@ -175,7 +248,7 @@
         </div>
         <div class="feature-text">
           <div class="f-icon yellow"></div>
-          <h3>Decode Their Flags</h3>
+          <h3>Decode Friends Profile</h3>
           <p>
             Don't waste time. View any profile and instantly get a summary of
             them and your compatibility.
@@ -183,11 +256,15 @@
           <ul class="f-list">
             <li><i class="ph-bold ph-check"></i> Know Their red flags</li>
             <li><i class="ph-bold ph-check"></i> Are they true friends</li>
-            <li><i class="ph-bold ph-check"></i> Past life connection check</li>
+            <li><i class="ph-bold ph-check"></i> You + Them compatibility</li>
+            <li>
+              <i class="ph-bold ph-check"></i> Find most rare matches between
+              you two
+            </li>
           </ul>
         </div>
       </div>
-      <div class="feature-block">
+      <!-- <div class="feature-block">
         <div class="feature-image-container">
           <div class="slider-wrapper" id="s3">
             <div class="slide">
@@ -215,20 +292,8 @@
             <li><i class="ph-bold ph-check"></i> Group chat topics</li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <div class="feature-block reverse-layout">
-        <div class="feature-image-container">
-          <div class="slider-wrapper" id="s4">
-            <div class="slide">
-              <img src="Gemini_Generated_Image_jlcgs3jlcgs3jlcg.png" />
-            </div>
-            <div class="slide">
-              <img src="inko.png" />
-            </div>
-          </div>
-          <div class="dots-container" data-target="s4"></div>
-          <div class="scribble scr-img-2"></div>
-        </div>
         <div class="feature-text">
           <div class="f-icon dark"></div>
           <h3>Explore the Cosmic Pool</h3>
@@ -237,20 +302,37 @@
             you.
           </p>
           <ul class="f-list">
-            <li><i class="ph-bold ph-check"></i> Rare 1-in-a-Crore Matches</li>
-            <li><i class="ph-bold ph-check"></i> Filter by Vibe, not Looks</li>
+            <li>
+              <i class="ph-bold ph-check"></i> Find your soulmate in cosmic pool
+            </li>
+            <li>
+              <i class="ph-bold ph-check"></i> Add your friends and know your
+              relation with them
+            </li>
             <li><i class="ph-bold ph-check"></i> Explore & requests</li>
           </ul>
         </div>
+        <div class="feature-image-container">
+          <div class="slider-wrapper" id="s4">
+            <div class="slide">
+              <img src="Gemini_Generated_Image_wr86bhwr86bhwr86.png" />
+            </div>
+            <div class="slide">
+              <img src="inko.png" />
+            </div>
+          </div>
+          <div class="dots-container" data-target="s4"></div>
+          <div class="scribble scr-img-2"></div>
+        </div>
       </div>
-      <div class="feature-block">
+      <!-- <div class="feature-block">
         <div class="feature-image-container">
           <div class="slider-wrapper" id="s5">
             <div class="slide">
-              <img src="Gemini_Generated_Image_cku378cku378cku3.png" />
+              <img src="Gemini_Generated_Image_boe003boe003boe0.png" />
             </div>
             <div class="slide">
-              <img src="Gemini_Generated_Image_fdwwtyfdwwtyfdww.png" />
+              <img src="Gemini_Generated_Image_dw1ls8dw1ls8dw1l.png" />
             </div>
           </div>
           <div class="dots-container" data-target="s5"></div>
@@ -268,7 +350,7 @@
             <li><i class="ph-bold ph-check"></i> Combined kundli analysis</li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </section>
     <section class="final-cta">
       <div class="scribble scr-cta"></div>
@@ -309,11 +391,54 @@
         <div class="footer-col newsletter-col">
           <h4>Stay Updated</h4>
           <p>Get astrological insights.</p>
-          <div class="mini-form">
-            <input type="text" placeholder="Email..." /><button>
+          <form name="footer-signup-form" class="mini-form">
+            <input type="email" name="email" placeholder="Email..." required />
+
+            <button type="submit">
               <i class="ph-bold ph-arrow-right"></i>
             </button>
-          </div>
+          </form>
+
+          <span
+            id="footer-msg"
+            style="
+              color: #ffd700;
+              font-size: 12px;
+              margin-top: 5px;
+              display: block;
+            "
+          ></span>
+
+          <script>
+            // URL wahi same rahega jo pehle tha
+            const footerURL =
+              "https://script.google.com/macros/s/AKfycbzUo-G3wib2uTOeU0A5FgB9211Rg2_-TUj7pUq-zvgxnia530P54P2uZioi4PLo266m/exec";
+
+            const footerForm = document.forms["footer-signup-form"];
+            const footerMsg = document.getElementById("footer-msg");
+
+            footerForm.addEventListener("submit", (e) => {
+              e.preventDefault();
+              footerMsg.innerHTML = "Joining..."; // Loading text
+
+              fetch(footerURL, {
+                method: "POST",
+                body: new FormData(footerForm),
+              })
+                .then((response) => {
+                  footerMsg.innerHTML = "Subscribed!";
+                  footerMsg.style.color = "lightgreen";
+                  footerForm.reset();
+                  setTimeout(function () {
+                    footerMsg.innerHTML = "";
+                  }, 3000);
+                })
+                .catch((error) => {
+                  footerMsg.innerHTML = "Error!";
+                  footerMsg.style.color = "red";
+                });
+            });
+          </script>
         </div>
       </div>
       <div class="footer-bottom">
