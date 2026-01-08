@@ -15,28 +15,46 @@
   --scr-zigzag: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 15 L 10 5 L 20 25 L 30 5 L 40 25 L 50 15' stroke='%23fbbf24' fill='none' stroke-width='3' opacity='0.4'/%3E%3C/svg%3E");
   --scr-circle: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='40' stroke='%238b5cf6' fill='none' stroke-width='2' opacity='0.2' stroke-dasharray='10,5'/%3E%3C/svg%3E");
 }
+
+/* 1. Global Reset Fix */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* 2. Scroll Fix (Sabse Important) */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Ye line right side ka scroll rokti hai */
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: var(--bg);
   color: var(--text);
   font-family: var(--font);
-  overflow-x: hidden;
-  position: relative;
 }
+
+/* 3. Blob Fix (Taaki mobile screen se bahar na nikle) */
 .blob {
   position: absolute;
   border-radius: 50%;
   filter: blur(90px);
   z-index: -1;
   opacity: 0.4;
+  max-width: 100vw; /* Screen se bada nahi hoga */
 }
+
+/* Baaki code same rehne de (.blob-1, .blob-2 etc.) */
 .blob-1 {
   top: -10%;
   left: -10%;
@@ -51,6 +69,8 @@ body {
   height: 500px;
   background: #fef3c7;
 }
+
+/* Navbar aur Logo wala code tera sahi hai, usme change mat karna */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -60,6 +80,7 @@ body {
   margin: 0 auto;
   position: relative;
   z-index: 100;
+  width: 100%; /* Ye add kar dena safe side ke liye */
 }
 /* Logo Container ko align karne ke liye */
 .logo {
