@@ -7,7 +7,6 @@
       content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"
     />
     <title>Soulmet | Vedic AI</title>
-
     <meta
       name="title"
       content="Soulmet | Vedic AI - Dating Fixed with Astro Networking"
@@ -16,7 +15,6 @@
       name="description"
       content="The first app that uses deep Astro science to find your most rare karmic connections. Stop swiping on faces, start matching souls."
     />
-
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://soulmet.com/" />
     <meta property="og:title" content="Soulmet | Find Your Astro Match" />
@@ -25,7 +23,6 @@
       content="Join the revolution of Astro Networking. Find your soulmate based on D9 & D60 charts."
     />
     <meta property="og:image" content="https://soulmet.in/logo copy.png" />
-
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://soulmet.com/" />
     <meta property="twitter:title" content="Soulmet | Vedic AI" />
@@ -34,7 +31,7 @@
       content="Dating is Broken. We Fixed it with Astro Networking."
     />
     <meta property="twitter:image" content="https://soulmet.in/logo copy.png" />
-    <title>Soulmet | Vedic AI</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap"
       rel="stylesheet"
@@ -47,6 +44,7 @@
     <div class="blob blob-2"></div>
     <div class="scribble scr-top-left"></div>
     <div class="scribble scr-top-right"></div>
+
     <nav class="navbar">
       <div class="logo">
         <img
@@ -60,27 +58,27 @@
             object-fit: contain;
           "
         />
-
         <span class="logo-text">Soulmet</span>
       </div>
       <div class="hamburger" onclick="toggleMenu()">
         <i class="ph-bold ph-list"></i>
       </div>
       <div class="nav-links" id="navLinks">
-        <a href="#showcase" onclick="toggleMenu()">Features</a
-        ><a href="#footer" onclick="toggleMenu()">Contact</a
-        ><a href="#hero" class="cta-small" onclick="toggleMenu()"
+        <a href="#showcase" onclick="toggleMenu()">Features</a>
+        <a href="#footer" onclick="toggleMenu()">Contact</a>
+        <a href="#hero" class="cta-small" onclick="toggleMenu()"
           >Join Waitlist</a
         >
       </div>
     </nav>
+
     <header class="hero-container" id="hero">
       <div class="hero-text animate-entry">
         <div class="tag-pill glow-pill">
           <i class="ph-fill ph-sparkle"></i> Launching Soon: Summer 2026
         </div>
         <h1 class="glow-text" style="font-size: 2.5rem">
-          Dating is Broken.<br />We Fixed it with
+          Dating is Broken.<br />We Fixed it with Worlds 1st
           <span class="highlight">Astro Networking.</span>
         </h1>
         <p class="sub-text">
@@ -88,6 +86,7 @@
           <strong>most rare karmic connections</strong>. Stop swiping on faces,
           start matching souls.
         </p>
+
         <div class="waitlist-form-container">
           <div class="scribble scr-form"></div>
           <p class="form-label">Be the first to get bonus and access:</p>
@@ -100,7 +99,6 @@
               required
               style="padding: 10px; margin: 5px"
             />
-
             <input
               type="email"
               name="email"
@@ -134,45 +132,20 @@
             ></span>
           </form>
 
-          <script>
-            // Tera generated URL yaha laga diya hai
-            // 👇 Main Form ke liye Naya URL 👇
-            const scriptURL =
-              "https://script.google.com/macros/s/AKfycbxoQZp-uDQYpIvyWSMni8_Q-MfMoLX4ZiUKFwOCoBzaMIzlaIG3nN47pCgnnegcgNkGLg/exec";
-            const form = document.forms["submit-to-google-sheet"];
-            const msg = document.getElementById("msg");
-
-            form.addEventListener("submit", (e) => {
-              e.preventDefault();
-              msg.innerHTML = "Submitting..."; // Loading text
-              msg.style.color = "#FFD700"; // Loading color (Yellow/Gold)
-
-              fetch(scriptURL, { method: "POST", body: new FormData(form) })
-                .then((response) => {
-                  msg.innerHTML = "Congratulations! Check your email.";
-                  msg.style.color = "green"; // Success color
-                  form.reset();
-                  setTimeout(function () {
-                    msg.innerHTML = "";
-                  }, 5000);
-                })
-                .catch((error) => {
-                  msg.innerHTML = "Error! Please try again.";
-                  msg.style.color = "red"; // Error color
-                  console.error("Error!", error.message);
-                });
-            });
-          </script>
           <div class="waiting-count">
             <div class="avatars">
               <img src="https://i.pravatar.cc/100?img=1" />
               <img src="https://i.pravatar.cc/100?img=2" />
               <img src="https://i.pravatar.cc/100?img=3" />
             </div>
-            <span>Join <strong>2,150+</strong> others waiting.</span>
+            <span
+              >Join <strong id="live-counter">2,150</strong>+ others
+              waiting.</span
+            >
           </div>
         </div>
       </div>
+
       <div class="phone-wrapper">
         <div class="phone-frame">
           <div class="notch"></div>
@@ -206,12 +179,14 @@
         <div class="phone-shadow"></div>
       </div>
     </header>
+
     <section class="feature-showcase-section" id="showcase">
       <div class="section-header">
         <h2>Sneak Peek Inside</h2>
         <p>See how Soulmet changes the game.</p>
         <div class="scribble scr-header"></div>
       </div>
+
       <div class="feature-block">
         <div class="feature-image-container">
           <div class="slider-wrapper" id="s1">
@@ -241,15 +216,14 @@
           </ul>
         </div>
       </div>
+
       <div class="feature-block reverse-layout">
         <div class="feature-image-container">
           <div class="slider-wrapper" id="s2">
             <div class="slide">
               <img src="Gemini_Generated_Image_9gwo6m9gwo6m9gwo.png" />
             </div>
-            <div class="slide">
-              <img src="profile next.png" />
-            </div>
+            <div class="slide"><img src="profile next.png" /></div>
           </div>
           <div class="dots-container" data-target="s2"></div>
           <div class="scribble scr-img-2"></div>
@@ -272,35 +246,7 @@
           </ul>
         </div>
       </div>
-      <!-- <div class="feature-block">
-        <div class="feature-image-container">
-          <div class="slider-wrapper" id="s3">
-            <div class="slide">
-              <img src="Gemini_Generated_Image_fcvkjbfcvkjbfcvk.png" />
-            </div>
-            <div class="slide">
-              <img
-                src="https://wildhunt.org/wp-content/uploads/2024/06/image-11-771x482.png"
-              />
-            </div>
-          </div>
-          <div class="dots-container" data-target="s3"></div>
-          <div class="scribble scr-img-1"></div>
-        </div>
-        <div class="feature-text">
-          <div class="f-icon dark"></div>
-          <h3>Cosmic Games</h3>
-          <p>
-            Play games like Intuition test and more with people/friends to match
-            energy.
-          </p>
-          <ul class="f-list">
-            <li><i class="ph-bold ph-check"></i> Intuition test</li>
-            <li><i class="ph-bold ph-check"></i> Guess photo by vibe</li>
-            <li><i class="ph-bold ph-check"></i> Group chat topics</li>
-          </ul>
-        </div>
-      </div> -->
+
       <div class="feature-block reverse-layout">
         <div class="feature-text">
           <div class="f-icon dark"></div>
@@ -325,41 +271,14 @@
             <div class="slide">
               <img src="Gemini_Generated_Image_wr86bhwr86bhwr86.png" />
             </div>
-            <div class="slide">
-              <img src="inko.png" />
-            </div>
+            <div class="slide"><img src="inko.png" /></div>
           </div>
           <div class="dots-container" data-target="s4"></div>
           <div class="scribble scr-img-2"></div>
         </div>
       </div>
-      <!-- <div class="feature-block">
-        <div class="feature-image-container">
-          <div class="slider-wrapper" id="s5">
-            <div class="slide">
-              <img src="Gemini_Generated_Image_boe003boe003boe0.png" />
-            </div>
-            <div class="slide">
-              <img src="Gemini_Generated_Image_dw1ls8dw1ls8dw1l.png" />
-            </div>
-          </div>
-          <div class="dots-container" data-target="s5"></div>
-          <div class="scribble scr-img-1"></div>
-        </div>
-        <div class="feature-text">
-          <div class="f-icon dark"></div>
-          <h3>Chat & Analysis</h3>
-          <p>
-            Know your partners secret, loyalty, compatibility directly in chat.
-          </p>
-          <ul class="f-list">
-            <li><i class="ph-bold ph-check"></i> Toxic Meter</li>
-            <li><i class="ph-bold ph-check"></i> Check loyalty</li>
-            <li><i class="ph-bold ph-check"></i> Combined kundli analysis</li>
-          </ul>
-        </div>
-      </div> -->
     </section>
+
     <section class="final-cta">
       <div class="scribble scr-cta"></div>
       <h2>Ready to find your Soulmet?</h2>
@@ -371,19 +290,17 @@
         Join Beta List Now
       </button>
     </section>
+
     <footer class="detailed-footer" id="footer">
       <div class="scribble scr-footer"></div>
       <div class="footer-grid">
         <div class="footer-col brand-col">
-          <div class="logo">
-            <span class="icon-box"><i class="ph-fill ph-planet"></i></span
-            >Soulmet.
-          </div>
+          <div class="logo"><span class="icon-box"></span>Soulmet.</div>
           <p>Decoding the matrix of human connections, one star at a time.</p>
           <div class="social-links">
-            <a href="#"><i class="ph-fill ph-instagram-logo"></i></a
-            ><a href="#"><i class="ph-fill ph-twitter-logo"></i></a
-            ><a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
+            <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph-fill ph-twitter-logo"></i></a>
+            <a href="#"><i class="ph-fill ph-linkedin-logo"></i></a>
           </div>
         </div>
         <div class="footer-col">
@@ -401,12 +318,10 @@
           <p>Get astrological insights.</p>
           <form name="footer-signup-form" class="mini-form">
             <input type="email" name="email" placeholder="Email..." required />
-
             <button type="submit">
               <i class="ph-bold ph-arrow-right"></i>
             </button>
           </form>
-
           <span
             id="footer-msg"
             style="
@@ -416,38 +331,6 @@
               display: block;
             "
           ></span>
-
-          <script>
-            // URL wahi same rahega jo pehle tha
-            // 👇 Footer Form ke liye bhi Same URL 👇
-            const footerURL =
-              "https://script.google.com/macros/s/AKfycbxoQZp-uDQYpIvyWSMni8_Q-MfMoLX4ZiUKFwOCoBzaMIzlaIG3nN47pCgnnegcgNkGLg/exec";
-
-            const footerForm = document.forms["footer-signup-form"];
-            const footerMsg = document.getElementById("footer-msg");
-
-            footerForm.addEventListener("submit", (e) => {
-              e.preventDefault();
-              footerMsg.innerHTML = "Joining..."; // Loading text
-
-              fetch(footerURL, {
-                method: "POST",
-                body: new FormData(footerForm),
-              })
-                .then((response) => {
-                  footerMsg.innerHTML = "Subscribed! Check your email.";
-                  footerMsg.style.color = "lightgreen";
-                  footerForm.reset();
-                  setTimeout(function () {
-                    footerMsg.innerHTML = "";
-                  }, 3000);
-                })
-                .catch((error) => {
-                  footerMsg.innerHTML = "Error!";
-                  footerMsg.style.color = "red";
-                });
-            });
-          </script>
         </div>
       </div>
       <div class="footer-bottom">
@@ -455,6 +338,95 @@
         <p>Made with and in Meerut, India.</p>
       </div>
     </footer>
+
     <script src="scripts.js"></script>
+
+    <script>
+      // New Deployed URL
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzaC1Q0ohrpsgnmzioLegbCH-KfSNSU6Xhsx92-3kXD7bc1E4u5QdmiOLywx7_Pgz4INg/exec";
+
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      const footerForm = document.forms["footer-signup-form"];
+      const footerMsg = document.getElementById("footer-msg");
+
+      // 1. Page Load Logic: Show 2150 + Real Count
+      window.addEventListener("load", () => {
+        console.log("Connecting...");
+        fetch(scriptURL)
+          .then((response) => response.json())
+          .then((data) => {
+            const counterDisplay = document.getElementById("live-counter");
+            if (counterDisplay && data.count !== undefined) {
+              // Logic: Base Count (2150) + Real Users from Sheet
+              let baseCount = 2150;
+              let realCount = data.count;
+              let totalDisplay = baseCount + realCount;
+
+              counterDisplay.innerText = totalDisplay.toLocaleString();
+            }
+          })
+          .catch((error) => console.error("Error fetching count:", error));
+      });
+
+      // 2. Main Form Submit
+      if (form) {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          msg.innerHTML = "Submitting...";
+          msg.style.color = "#FFD700";
+
+          fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then((response) => {
+              msg.innerHTML = "Congratulations! Check your email.";
+              msg.style.color = "green";
+
+              // Update UI instantly
+              const counterDisplay = document.getElementById("live-counter");
+              if (counterDisplay) {
+                let currentVal = parseInt(
+                  counterDisplay.innerText.replace(/,/g, "")
+                );
+                if (!isNaN(currentVal)) {
+                  counterDisplay.innerText = (currentVal + 1).toLocaleString();
+                }
+              }
+
+              form.reset();
+              setTimeout(() => {
+                msg.innerHTML = "";
+              }, 5000);
+            })
+            .catch((error) => {
+              msg.innerHTML = "Error! Please try again.";
+              msg.style.color = "red";
+              console.error("Error!", error);
+            });
+        });
+      }
+
+      // 3. Footer Form Submit
+      if (footerForm) {
+        footerForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          footerMsg.innerHTML = "Joining...";
+
+          fetch(scriptURL, { method: "POST", body: new FormData(footerForm) })
+            .then(() => {
+              footerMsg.innerHTML = "Subscribed! Check email.";
+              footerMsg.style.color = "lightgreen";
+              footerForm.reset();
+              setTimeout(() => {
+                footerMsg.innerHTML = "";
+              }, 3000);
+            })
+            .catch(() => {
+              footerMsg.innerHTML = "Error!";
+              footerMsg.style.color = "red";
+            });
+        });
+      }
+    </script>
   </body>
 </html>
